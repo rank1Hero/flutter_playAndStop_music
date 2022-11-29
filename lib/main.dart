@@ -55,6 +55,38 @@ class _XylophoneAppState extends State<XylophoneApp> {
                     ),
                   ),
                 ),
+                const SizedBox(height:10),
+                TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue
+                  ),
+                  onPressed: () {
+                    player.pause();
+                  },
+                  child: const Text(
+                    "Pause",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
+                const SizedBox(height:10),
+                TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue
+                  ),
+                  onPressed: () {
+                    player.resume();
+                  },
+                  child: const Text(
+                    "Resume",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
